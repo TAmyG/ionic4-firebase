@@ -1,5 +1,7 @@
 # Ionic 4 Firebase
 
+## Correr con ionic serve
+
 1.
 ionic start login blank --type=angular
 npm i firebase @angular/fire --save
