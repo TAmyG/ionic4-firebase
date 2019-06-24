@@ -20,6 +20,7 @@ export class AuthService {
       );
     } catch (error) {
       console.log("Login Catch", error);
+      return error;
     }
   }
 
@@ -32,6 +33,8 @@ export class AuthService {
       );
     } catch (error) {
       console.log("Register Catch", error);
+
+      return error;
     }
   }
 }
