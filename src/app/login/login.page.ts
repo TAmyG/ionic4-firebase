@@ -15,7 +15,10 @@ export class LoginPage implements OnInit {
     private authService: AuthService,
     private router: Router,
     private toastController: ToastController
-  ) {}
+  ) {
+    this.user.email = "tvivas@bdgsa.net";
+    this.user.password = "123456";
+  }
 
   ngOnInit() {}
 
