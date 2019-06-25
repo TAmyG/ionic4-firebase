@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
       Ionic 4 Firebase
     </ion-title>
@@ -9,25 +9,29 @@
 <ion-content>
   <ion-card *ngIf="weatherInfo">
     <ion-card-header>
-      <ion-card-title>{{weatherInfo.name}}, {{weatherInfo.sys.country}}</ion-card-title>
-      <ion-card-subtitle>{{weatherInfo.weather[0].description}}</ion-card-subtitle>
+      <ion-card-title
+        >{{ weatherInfo.name }}, {{ weatherInfo.sys.country }}</ion-card-title
+      >
+      <ion-card-subtitle>{{
+        weatherInfo.weather[0].description
+      }}</ion-card-subtitle>
     </ion-card-header>
 
     <ion-card-content>
       <ion-item href="#" class="activated">
-        <ion-label>Temperatura: {{weatherInfo.main.temp}}&#8451;</ion-label>
+        <ion-label>Temperatura: {{ weatherInfo.main.temp }}&#8451;</ion-label>
       </ion-item>
       <ion-item href="#" class="activated">
-        <ion-label>Presion: {{weatherInfo.main.pressure}}hpa</ion-label>
+        <ion-label>Presion: {{ weatherInfo.main.pressure }}hpa</ion-label>
       </ion-item>
       <ion-item href="#" class="activated">
-        <ion-label>Humedad: {{weatherInfo.main.humidity}}%</ion-label>
+        <ion-label>Humedad: {{ weatherInfo.main.humidity }}%</ion-label>
       </ion-item>
       <ion-item href="#" class="activated">
-        <ion-label>Min: {{weatherInfo.main.temp_min}}&#8451;</ion-label>
+        <ion-label>Min: {{ weatherInfo.main.temp_min }}&#8451;</ion-label>
       </ion-item>
       <ion-item href="#" class="activated">
-        <ion-label>Max: {{weatherInfo.main.temp_max}}&#8451;</ion-label>
+        <ion-label>Max: {{ weatherInfo.main.temp_max }}&#8451;</ion-label>
       </ion-item>
     </ion-card-content>
   </ion-card>

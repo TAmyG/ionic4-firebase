@@ -10,6 +10,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from "../environments/environment";
 import { HttpClientModule } from "@angular/common/http";
 
@@ -22,6 +23,7 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule,
     HttpClientModule
   ],
   providers: [

@@ -18,7 +18,15 @@ const routes: Routes = [
     path: "admin",
     loadChildren: "./admin/admin.module#AdminPageModule",
     canActivate: [AuthGuard]
-  }
+  },
+  {
+    path: 'todo-details', loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule',
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'todo-details/:id', loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule',
+    canActivate: [AuthGuard]
+  },
 ];
 
 @NgModule({
@@ -27,4 +35,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -16,8 +16,8 @@ export class HomePage implements OnInit {
     private router: Router,
     private angularFireAuth: AngularFireAuth,
     private authService: AuthService,
-    private weather: WeatherService
-  ) {}
+    private weather: WeatherService,
+  ) { }
 
   ngOnInit() {
     this.weather.searchData("Mexico", "mx").subscribe((response: any) => {
